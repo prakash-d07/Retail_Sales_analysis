@@ -13,15 +13,15 @@ This fully functional automated Retail Analysis Model involves 6 major steps:
 -- Connected AWS S3 to Snowflake by creating a storage integration and pipe, facilitating continuous data upload tracking by automatically creating corresponding tables in Snowflake.
 -- Set up a snow pipe to recognize and ingest files from the external stage, copying the data into the existing table. ❄️
 
-3rd Step in Jupyter_Notebook (Python):
+3. Step in Jupyter_Notebook (Python):
 --Established a seamless connection between Snowflake and Jupyter Notebook to retrieve data from tables into separate DataFrames.
 -- Conducted Exploratory Data Analysis (#EDA), which involved data cleaning, modification, and in-depth analysis.
 -- Stored the cleaned data back into Snowflake using the snowflake-python package within the same existing schema from which the data was extracted from the S3 bucket. 📊🐍
 
-4th Step in #Jupyter_Lab (#Python):
+4. Step in #Jupyter_Lab (#Python):
 --Utilized the jupyter_scheduler and jupyterlab-scheduler to automate the EDA process and avoid repetitive commands, enabling scheduled refreshes in Jupyter Lab. ⏰🔄
 
-5th Step in Snowflake (#SQL):
+5. Step in Snowflake (#SQL):
 --Created a master Fact table and implemented several Key Performance Indicators (KPIs) in Snowflake using the cleaned data. 📈🔑
 
  6th Step in #PowerBI:
